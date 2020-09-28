@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* Escribe un programa que dada una palabra en minúsculas,
+         muestre en la consola la mitad de la palabra en minúsculas y 
+         la otra mitad en mayúsculas. 
+         */
+
+        let palabra = window.prompt("Escribe una palabra en minúsculas");
+
+
+        let mitad = palabra.substring(0, palabra.length / 2);
+
+        let mitadmayus = mitad.toUpperCase();
+
+        let palabramostrar = palabra.replace(mitad, mitadmayus);
+
+        console.log(palabramostrar);
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
