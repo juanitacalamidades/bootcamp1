@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+/*Un programa que te pregunta la temperatura que hace donde estás 
+y te sugiere qué hacer dependiendo de ella. Las recomendaciones son:
+
+Si hace más de 40 grados, vete a otro sitio
+Entre 30 y 40 grados, enciende el aire acondicionado
+Entre 30 y 20 grados, no hagas nada
+Entre 10 y 20 grados, enciende la calefacción
+Si hace menos de 10 grados, vete a otro sitio */
+
+
+let temp = parseInt(window.prompt("Qué temperatura hace?"));
+let res1 = "vete a otro sitio";
+let res2 = "enciende el aire acondicionado";
+let res3 = "no hagas nada";
+let res4 = "enciende la calefacción";
+
+
+if (temp > 40) {
+    window.alert(res1);
+} else if (temp > 30 && temp < 40){
+    window.alert(res2);
+}else if (temp > 20 && temp < 30) {
+    window.alert(res3);
+}else if (temp > 10 && temp < 20) {
+    window.alert(res4);
+}else if (temp< 10){
+    window.alert(res1);
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
